@@ -43,13 +43,23 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-    myarray(['David','Knight'])
+    # print_hi('PyCharm')
+    # myarray(['David','Knight'])
     family = (davidpractice.mydictonary("David Knight", 35),
               davidpractice.mydictonary("Yang Zhou", 30),
               davidpractice.mydictonary("Dylan Knight", 2))
 
+    d = davidpractice.mydictonary("Dylan Knight", 2)
+    d.update(davidpractice.mydictonary("Test", 5))
+
+    print(len(family))
+
+    sorted(d)
+
     for p in family:
         print(f'{p.get("name")}; age: {p.get("age")}')
+
+    # davidpractice.ifstatement()
+    # davidpractice.loopfun()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
